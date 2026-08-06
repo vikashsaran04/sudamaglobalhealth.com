@@ -935,6 +935,23 @@
       box-shadow: var(--hover-shadow);
     }
 
+    .doctor-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin: 0 auto 16px auto;
+      display: block;
+      border: 3px solid #E2E8F0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: var(--transition);
+    }
+
+    .doctor-card:hover .doctor-avatar {
+      border-color: var(--primary-blue);
+      transform: scale(1.05);
+    }
+
     .doctor-name {
       font-size: 1.15rem;
       font-weight: 800;
@@ -1674,7 +1691,7 @@
       <div class="hospitals-grid" id="hospitalsGrid">
         <!-- Hospital 1 -->
         <div class="hospital-card">
-          <img src="hosp1.jpg" alt="Reliance Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://www.rfhospital.org/sites/default/files/2025-07/rfh_hospital-img.jpg" alt="Reliance Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Reliance Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Mumbai, Maharashtra</div>
@@ -1686,7 +1703,7 @@
 
         <!-- Hospital 2 -->
         <div class="hospital-card">
-          <img src="hosp2.jpg" alt="KIM Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://cdn.expresshealthcare.in/wp-content/uploads/2025/05/27160936/New-Project-19.jpg" alt="KIM Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">KIM Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Thane, Maharashtra</div>
@@ -1698,7 +1715,7 @@
 
         <!-- Hospital 3 -->
         <div class="hospital-card">
-          <img src="hosp3.jpg" alt="Apollo Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://static.hospidio.com/uploads/hospital/63/apollo-hospital-navi-mumbai.jpg.webp" alt="Apollo Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Apollo Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Navi Mumbai, Maharashtra</div>
@@ -1710,7 +1727,7 @@
 
         <!-- Hospital 4 -->
         <div class="hospital-card">
-          <img src="hosp4.jpg" alt="Lilavati Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://listmyclinic.com/wp-content/uploads/2021/06/Lilavati-Hospital-and-Research-Centre.jpg" alt="Lilavati Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1512678080530-7760d81faba6?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Lilavati Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Mumbai, Maharashtra</div>
@@ -1722,7 +1739,7 @@
 
         <!-- Hospital 5 (Collapsible) -->
         <div class="hospital-card hidden-hospital">
-          <img src="hosp5.jpg" alt="Kokilaben Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://static.wixstatic.com/media/0ccbd3_88737cce70b04e1babcbd803265ba277~mv2.jpeg/v1/fill/w_560,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/0ccbd3_88737cce70b04e1babcbd803265ba277~mv2.jpeg" alt="Kokilaben Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Kokilaben Dhirubhai Ambani Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Mumbai, Maharashtra</div>
@@ -1734,7 +1751,7 @@
 
         <!-- Hospital 6 (Collapsible) -->
         <div class="hospital-card hidden-hospital">
-          <img src="hosp6.jpg" alt="Fortis Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://yapita-production.s3.ap-south-1.amazonaws.com/uploads/facility_photo/photo/03432411-660c-4d91-8673-29f3b83f44dc/Mulund-1.jpg" alt="Fortis Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Fortis Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Mumbai, Maharashtra</div>
@@ -1746,7 +1763,7 @@
 
         <!-- Hospital 7 (Collapsible) -->
         <div class="hospital-card hidden-hospital">
-          <img src="hosp7.jpg" alt="Manipal Hospital" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://www.globalcarehealth.com/img/hospitalsimg/Manipal-Hospital-Old-Airport-Road-Bengaluru-India-gchh51.webp" alt="Manipal Hospital" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">Manipal Hospital</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Bengaluru, Karnataka</div>
@@ -1758,7 +1775,7 @@
 
         <!-- Hospital 8 (Collapsible) -->
         <div class="hospital-card hidden-hospital">
-          <img src="hosp8.jpg" alt="MGM Healthcare" class="hospital-card-img" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&auto=format&fit=crop&q=80';">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8ZXnrjki0FeHIQXRg1ii2lXu7wOzSaWHWFzDmdMDE4PkO-QEWJlI7VnIW&s=10" alt="MGM Healthcare" class="hospital-card-img" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=800&auto=format&fit=crop&q=80';">
           <div class="hospital-content">
             <h3 class="hospital-name">MGM Healthcare</h3>
             <div class="hospital-location"><i class="fa-solid fa-location-dot" style="color:#0A58CA;"></i> Chennai, Tamil Nadu</div>
@@ -1845,7 +1862,7 @@
         <div class="doctor-carousel-track" id="doctorCarouselTrack">
           <!-- Doctor 1 -->
           <div class="doctor-card">
-            <img src="doctor1.jpg" alt="Prof. Dr. Suresh Advani" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmx50VyHagaOZqQSxDZJjKb_BpIDBAgcJIjTGWGp1QVWvvMLUafkTZDgsM9HmxP4jc6ud5RC5Gd24zHFUTDaAVj28wkgjGSzBqwd3PAcggji0d4nYlqK_31An3ejf8tpnGKVy2jdRJoelB3=s1360-w1360-h1020-rw" alt="Prof. Dr. Suresh Advani" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Prof. Dr. Suresh Advani</h3>
             <span class="doctor-spec-badge">Medical Oncology</span>
             <div class="doctor-hospital">Nanavati Max Hospital, Mumbai</div>
@@ -1853,7 +1870,7 @@
 
           <!-- Doctor 2 -->
           <div class="doctor-card">
-            <img src="doctor2.jpg" alt="Dr. Anil K. D’Cruz" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWnFnITskRfrxEvrmi7Un1jtmTEVase54H9_Vk8hoH7oxRYx0EyOcJ2nLLAtZvEkeR3M5YKxcqV--Rn50wZlsBQvMcZ9Zu9GgRpmUNzESrxEAogCY7qPOU_hJhIrxLYBLeT1Gs4=s1360-w1360-h1020-rw" alt="Dr. Anil K. D’Cruz" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Anil K. D’Cruz</h3>
             <span class="doctor-spec-badge">Surgical Oncology</span>
             <div class="doctor-hospital">Apollo Hospitals, Navi Mumbai</div>
@@ -1861,7 +1878,7 @@
 
           <!-- Doctor 3 -->
           <div class="doctor-card">
-            <img src="doctor3.jpg" alt="Dr. KR Balakrishnan" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://www.cureindia.com/images/uploads/doctors/image/576704369dr-k-r-balakrishnan-heart-transplant-surgeon.jpg" alt="Dr. KR Balakrishnan" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. KR Balakrishnan</h3>
             <span class="doctor-spec-badge">Cardiac Surgery & Heart Transplant</span>
             <div class="doctor-hospital">MGM Healthcare, Chennai</div>
@@ -1869,7 +1886,7 @@
 
           <!-- Doctor 4 -->
           <div class="doctor-card">
-            <img src="doctor4.jpg" alt="Dr. Anil Vaidya" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://www.forerunnershealthcare.com/dr-anil-vaidya/images/dr-anil-vaidya-best-multi-organ-transplant-surgeon-in-chennai.jpg" alt="Dr. Anil Vaidya" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Anil Vaidya</h3>
             <span class="doctor-spec-badge">Multi-Organ Transplant</span>
             <div class="doctor-hospital">MGM Healthcare, Chennai</div>
@@ -1877,7 +1894,7 @@
 
           <!-- Doctor 5 -->
           <div class="doctor-card">
-            <img src="doctor5.jpg" alt="Dr. Abhaya Kumar" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://kdahweb-static-1.kokilabenhospital.com/kdah-2019/product/1583331422.jpg" alt="Dr. Abhaya Kumar" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Abhaya Kumar</h3>
             <span class="doctor-spec-badge">Neurosurgery</span>
             <div class="doctor-hospital">Kokilaben Hospital, Mumbai</div>
@@ -1885,7 +1902,7 @@
 
           <!-- Doctor 6 -->
           <div class="doctor-card">
-            <img src="doctor6.jpg" alt="Prof. Dr. Pradeep Bhosale" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://max-website20-images.s3.ap-south-1.amazonaws.com/2_ec90b453ad.jpg" alt="Prof. Dr. Pradeep Bhosale" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Prof. Dr. Pradeep Bhosale</h3>
             <span class="doctor-spec-badge">Orthopaedics & Joint</span>
             <div class="doctor-hospital">Nanavati Max Hospital, Mumbai</div>
@@ -1893,7 +1910,7 @@
 
           <!-- Doctor 7 -->
           <div class="doctor-card">
-            <img src="doctor7.jpg" alt="Dr. Amit Maydeo" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://www.rfhospital.org/sites/default/files/2025-02/Dr%20Amit%20Maydeo.jpg" alt="Dr. Amit Maydeo" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Amit Maydeo</h3>
             <span class="doctor-spec-badge">Gastroenterology & Hepatology</span>
             <div class="doctor-hospital">HN Reliance Hospital, Mumbai</div>
@@ -1901,7 +1918,7 @@
 
           <!-- Doctor 8 -->
           <div class="doctor-card">
-            <img src="doctor8.jpg" alt="Dr. M. Deenadayalan" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://mgmcancerinstitute.in/static/fd13c2b21070cd3f6a6d716ef2fe6c91/9e4c9/doctors-51.webp.webp" alt="Dr. M. Deenadayalan" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. M. Deenadayalan</h3>
             <span class="doctor-spec-badge">Paediatric Oncology / Haematology</span>
             <div class="doctor-hospital">MGM Healthcare, Chennai</div>
@@ -1909,7 +1926,7 @@
 
           <!-- Doctor 9 -->
           <div class="doctor-card">
-            <img src="doctor9.jpg" alt="Dr. Sanjay Pandey" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://s3-us-west-2.amazonaws.com/kdahweb-static.kokilabenhospital.com/kdah-2019/product/1579763204.jpg" alt="Dr. Sanjay Pandey" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Sanjay Pandey</h3>
             <span class="doctor-spec-badge">Urology</span>
             <div class="doctor-hospital">Kokilaben Hospital, Mumbai</div>
@@ -1917,7 +1934,7 @@
 
           <!-- Doctor 10 -->
           <div class="doctor-card">
-            <img src="doctor10.jpg" alt="Dr. Atul Limaye" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://www.fortishealthcare.com/drupal-data/doctors/dr-atul--limaye-3049.jpg" alt="Dr. Atul Limaye" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Atul Limaye</h3>
             <span class="doctor-spec-badge">Interventional Cardiology</span>
             <div class="doctor-hospital">Fortis Hospital, Mumbai</div>
@@ -1925,7 +1942,7 @@
 
           <!-- Doctor 11 -->
           <div class="doctor-card">
-            <img src="doctor11.jpg" alt="Dr. H. Sudarshan Ballal" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://www.stempeutics.com/sites/default/files/styles/large/public/2022-02/Dr_H_Sudarshan_Ballal.jpg" alt="Dr. H. Sudarshan Ballal" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. H. Sudarshan Ballal</h3>
             <span class="doctor-spec-badge">Nephrology</span>
             <div class="doctor-hospital">Manipal Hospital, Bengaluru</div>
@@ -1933,7 +1950,7 @@
 
           <!-- Doctor 12 -->
           <div class="doctor-card">
-            <img src="doctor12.jpg" alt="Dr. Ravindra Nikalji" class="doctor-avatar" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
+            <img src="https://drupal-cdn-hfaeddcdbng5hfbg.a01.azurefd.net/sites/default/files/2026-06/dr-ravindra-nikalji.jpg" alt="Dr. Ravindra Nikalji" class="doctor-avatar" referrerpolicy="no-referrer" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=300&auto=format&fit=crop&q=80';">
             <h3 class="doctor-name">Dr. Ravindra Nikalji</h3>
             <span class="doctor-spec-badge">Nephrology</span>
             <div class="doctor-hospital">Apollo Hospitals, Navi Mumbai</div>
