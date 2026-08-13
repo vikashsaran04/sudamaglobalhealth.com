@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>International Medical Facilitator Partnership Program | Sudama Global Health</title>
+  <meta name="description" content="Join Sudama Global Health as an International Medical Facilitator. High-profit equity sharing model up to 50%, 100+ top JCI/NABH hospital networks in India, and 100% ground operational support.">
+  
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- Google Fonts: Montserrat & Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    /* ==========================================================================
+       1. CORE SYSTEM & RESPONSIVE SETUP
+       ========================================================================== */
+    :root {
+      --primary-blue: #23376e;
+      --secondary-yellow: #ffc35a;
+      --bg-soft: #FEF8EA;
+      --text-main: #23376e;
+      --text-muted: #3d4f7c;
+      --text-light: #6e7d9f;
+      --border-color: #E6DFD3;
+      --card-shadow: 0px 8px 24px rgba(0, 0, 0, 0.05);
+      --hover-shadow: 0px 14px 30px rgba(35, 55, 110, 0.12);
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: 'Montserrat', 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg-soft);
+      color: var(--text-main);
+      line-height: 1.55;
+    }
+
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      padding-top: 85px; /* UPDATED: Adjusted for larger header */
+      background-color: var(--bg-soft);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Section Typography */
+    .section-title-wrapper {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .section-subtitle {
+      color: var(--secondary-yellow);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-size: 0.82rem;
+      margin-bottom: 6px;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+      line-height: 1.25;
+      position: relative;
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3.5px;
+      background: var(--secondary-yellow);
+      border-radius: 2px;
+      margin: 8px auto 0 auto;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 0.98rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* UPDATED: Larger Logo */
+    .logo-img {
+      height: 60px; /* Badhaya gaya hai */
+      max-width: 250px; /* Max width badhaya gaya hai */
+      width: auto;
+      object-fit: contain;
+      display: block;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      outline: none;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background-color: var(--secondary-yellow);
+      color: var(--primary-blue);
+      font-weight: 800;
+      box-shadow: 0 5px 15px rgba(255, 195, 90, 0.35);
+    }
+
+    .btn-primary:hover {
+      background-color: #f0b243;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(255, 195, 90, 0.45);
+    }
+
+    .btn-outline {
+      border: 2px solid var(--primary-blue);
+      color: var(--primary-blue);
+      background: #FFFFFF;
+    }
+
+    .btn-outline:hover {
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       2. HEADER & MOBILE MENU BUTTON (UPDATED LARGER HEADER)
+       ========================================================================== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 85px; /* UPDATED: Height 68px se badha kar 85px ki gayi */
+      background: #FFFFFF;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+      border-bottom: 1px solid var(--border-color);
+      z-index: 1000;
+    }
+
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+    }
+
+    .brand-logo-group {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.92rem;
+      transition: var(--transition);
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary-blue);
+    }
+
+    /* Mobile Menu Button */
+    .drawer-toggle-btn {
+      display: none;
+      background: var(--bg-soft);
+      border: 1px solid var(--border-color);
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary-blue);
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    /* Mobile Drawer */
+    .drawer-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgba(35, 55, 110, 0.4);
+      backdrop-filter: blur(6px);
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .drawer-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .drawer-menu {
+      position: absolute;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100%;
+      background: var(--bg-soft);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      transition: var(--transition);
+      box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+    }
+
+    .drawer-overlay.active .drawer-menu {
+      right: 0;
+    }
+
+    .drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 20px;
+    }
+
+    .drawer-close {
+      font-size: 1.6rem;
+      cursor: pointer;
+      color: var(--primary-blue);
+    }
+
+    .drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .drawer-link {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: var(--radius-sm);
+      transition: var(--transition);
+    }
+
+    .drawer-link:hover, .drawer-link.active {
+      background: #FFFFFF;
+      color: var(--primary-blue);
+      box-shadow: var(--card-shadow);
+    }
+
+    /* ==========================================================================
+       3. HERO SECTION
+       ========================================================================== */
+    .partnership-hero {
+      position: relative;
+      background: linear-gradient(135deg, rgba(35, 55, 110, 0.94) 0%, rgba(20, 35, 75, 0.98) 100%), 
+                  url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1600&auto=format&fit=crop&q=80') center/cover no-repeat;
+      padding: 68px 0 80px 0;
+      color: #FFFFFF;
+      border-bottom: 4px solid var(--secondary-yellow);
+    }
+
+    .partnership-hero-content {
+      max-width: 840px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero-badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 195, 90, 0.2);
+      border: 1px solid rgba(255, 195, 90, 0.6);
+      color: var(--secondary-yellow);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 18px;
+    }
+
+    .partnership-hero-title {
+      font-size: 2.5rem;
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      color: #FFFFFF;
+    }
+
+    .partnership-hero-title span {
+      color: var(--secondary-yellow);
+    }
+
+    .partnership-hero-subtitle {
+      font-size: 1.05rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 28px;
+      font-weight: 500;
+    }
+
+    /* Hero Stats Boxes */
+    .hero-stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 36px;
+    }
+
+    .hero-stat-card {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 16px 12px;
+      border-radius: 14px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-stat-number {
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: var(--secondary-yellow);
+    }
+
+    .hero-stat-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.85);
+      margin-top: 4px;
+    }
+
+    /* ==========================================================================
+       4. EXECUTIVE SUMMARY & PROPER BOX LAYOUTS
+       ========================================================================== */
+    .summary-section {
+      padding: 68px 0;
+    }
+
+    .summary-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+    }
+
+    .summary-text {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: var(--text-main);
+      margin-bottom: 20px;
+    }
+
+    .vision-badges-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    .vision-badge-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-color);
+      padding: 16px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      height: 100%;
+    }
+
+    .vision-badge-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary-blue);
+      color: var(--secondary-yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .vision-badge-title {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+    }
+
+    /* Benefits Section Grid */
+    .benefits-section {
+      padding: 60px 0;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .benefit-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-md);
+      padding: 28px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .benefit-icon-wrapper {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: rgba(255, 195, 90, 0.2);
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      margin-bottom: 16px;
+      border: 1px solid rgba(255, 195, 90, 0.5);
+    }
+
+    .benefit-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+      margin-bottom: 8px;
+    }
+
+    .benefit-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* ==========================================================================
+       5. PROFIT TIERS & ANCILLARY BOXES
+       ========================================================================== */
+    .profit-section {
+      padding: 68px 0;
+      background: #FFFFFF;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .profit-intro-box {
+      background: var(--bg-soft);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin-bottom: 36px;
+      border: 1px dashed var(--secondary-yellow);
+      text-align: center;
+    }
+
+    .profit-intro-text {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+    }
+
+    .tiers-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .tier-card {
+      background: var(--bg-soft);
+      border-radius: var(--radius-md);
+      padding: 22px 16px;
+      border: 2px solid var(--border-color);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 100%;
+    }
+
+    .tier-card.featured {
+      border-color: var(--secondary-yellow);
+      background: #FFFFFF;
+      box-shadow: var(--hover-shadow);
+    }
+
+    .tier-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary-blue);
+      color: var(--secondary-yellow);
+      font-size: 0.65rem;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 50px;
+      text-transform: uppercase;
+    }
+
+    .tier-name {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary-blue);
+      text-align: center;
+    }
+
+    .tier-volume {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .tier-payout {
+      background: var(--secondary-yellow);
+      color: var(--primary-blue);
+      font-size: 1.15rem;
+      font-weight: 900;
+      padding: 8px;
+      border-radius: 8px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .tier-features {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .tier-features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 6px;
+    }
+
+    .tier-features li i {
+      color: #10B981;
+      margin-top: 2px;
+    }
+
+    .ancillary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .ancillary-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 18px 22px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      height: 100%;
+    }
+
+    .ancillary-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--primary-blue);
+      color: var(--secondary-yellow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    /* ==========================================================================
+       6. COMPARISON TABLE & FORM
+       ========================================================================== */
+    .comparison-section {
+      padding: 68px 0;
+    }
+
+    .comparison-table-wrapper {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+      overflow-x: auto;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      min-width: 600px;
+    }
+
+    .comparison-table th, .comparison-table td {
+      padding: 14px 18px;
+      font-size: 0.88rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .comparison-table th.sudama-col, .comparison-table td.sudama-cell {
+      background: rgba(254, 248, 234, 0.7);
+      color: var(--primary-blue);
+      font-weight: 700;
+    }
+
+    /* Registration Section */
+    .registration-section {
+      padding: 68px 0;
+    }
+
+    .registration-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .contact-info-panel {
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--card-shadow);
+    }
+
+    .contact-person-card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-bottom: 14px;
+    }
+
+    .form-card {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      padding: 32px;
+      box-shadow: var(--card-shadow);
+      border: 1px solid var(--border-color);
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-label {
+      display: block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--primary-blue);
+      margin-bottom: 6px;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1.5px solid var(--border-color);
+      border-radius: 10px;
+      font-size: 0.92rem;
+      font-family: inherit;
+      color: var(--text-main);
+      background: var(--bg-soft);
+      outline: none;
+    }
+
+    .phone-input-group {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       7. FOOTER
+       ========================================================================== */
+    .site-footer {
+      background-color: var(--primary-blue);
+      color: #FFFFFF;
+      padding: 60px 0 28px 0;
+      border-top: 4px solid var(--secondary-yellow);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1.2fr;
+      gap: 36px;
+      margin-bottom: 36px;
+    }
+
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    /* UPDATED: Footer Logo Size */
+    .footer-logo {
+      height: 52px;
+      max-width: 220px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .footer-desc {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.88rem;
+      line-height: 1.5;
+    }
+
+    .footer-title {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--secondary-yellow);
+      margin-bottom: 16px;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-links a:hover {
+      color: var(--secondary-yellow);
+      transform: translateX(4px);
+    }
+
+    .footer-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.88rem;
+    }
+
+    .footer-contact-item i {
+      color: var(--secondary-yellow);
+      font-size: 1.1rem;
+      margin-top: 3px;
+    }
+
+    .footer-social-group {
+      margin-top: 16px;
+    }
+
+    .footer-social-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .social-icons-list {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 195, 90, 0.35);
+      text-decoration: none;
+    }
+
+    .social-icon-btn:hover {
+      background: var(--secondary-yellow);
+      color: var(--primary-blue);
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.18);
+      padding-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.82rem;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ==========================================================================
+       8. MOBILE RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .hero-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .vision-badges-grid, .tiers-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .registration-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding-top: 75px; /* Mobile header adjustment */
+      }
+
+      .site-header {
+        height: 75px; /* Mobile par 75px height */
+      }
+
+      .logo-img {
+        height: 73px; /* Mobile par logo size 50px */
+      }
+
+      .nav-menu {
+        display: none;
+      }
+
+      .drawer-toggle-btn {
+        display: flex;
+      }
+
+      .partnership-hero-title {
+        font-size: 1.7rem;
+      }
+
+      .benefits-grid, .ancillary-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .vision-badges-grid, .tiers-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-stats-row {
+        grid-template-columns: 1fr;
+      }
+
+      .phone-input-group {
+        grid-template-columns: 80px 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER (LARGER SIZE) -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html#home" class="brand-logo-group">
+        <img src="https://vikashsaran04.github.io/sudamaglobalhealth.com/logo.jpg" alt="Sudama Global Health Logo" class="logo-img" onerror="this.onerror=null; this.src='logo.jpg';">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#treatments" class="nav-link">Treatments</a>
+        <a href="index.html#process" class="nav-link">Process</a>
+        <a href="index.html#hospitals" class="nav-link">Hospitals</a>
+        <a href="index.html#doctors" class="nav-link">Doctors</a>
+        <a href="index.html#appointment" class="nav-link">Help/Contact</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="facilitator-partnership-progra.html" class="nav-link active">Partnership Program</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="drawer-toggle-btn" id="drawerToggleBtn" aria-label="Open Navigation Menu">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu Overlay -->
+  <div class="drawer-overlay" id="drawerOverlay">
+    <div class="drawer-menu">
+      <div class="drawer-header">
+        <div style="font-weight:800; color:var(--primary-blue);">Sudama <span style="color:var(--secondary-yellow);">Health</span></div>
+        <div class="drawer-close" id="drawerClose">&times;</div>
+      </div>
+      <div class="drawer-links">
+        <a href="index.html#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="index.html#treatments" class="drawer-link"><i class="fa-solid fa-stethoscopes"></i> Treatments</a>
+        <a href="index.html#process" class="drawer-link"><i class="fa-solid fa-clipboard-list"></i> Process</a>
+        <a href="index.html#hospitals" class="drawer-link"><i class="fa-solid fa-hospital"></i> Hospitals</a>
+        <a href="index.html#doctors" class="drawer-link"><i class="fa-solid fa-user-doctor"></i> Doctors</a>
+        <a href="index.html#appointment" class="drawer-link"><i class="fa-solid fa-headset"></i> Help & Contact</a>
+        <a href="blog.html" class="drawer-link"><i class="fa-solid fa-newspaper"></i> Medical Blog</a>
+        <a href="facilitator-partnership-progra.html" class="drawer-link active"><i class="fa-solid fa-handshake-simple"></i> Partnership Program</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="partnership-hero">
+    <div class="container partnership-hero-content">
+      <div class="hero-badge-pill">
+        <i class="fa-solid fa-handshake-angle"></i> Global Medical Facilitator Alliance
+      </div>
+      <h1 class="partnership-hero-title">
+        Join as an International <span>Medical Facilitator</span>
+      </h1>
+      <p class="partnership-hero-subtitle">
+        Empowering Global Healthcare Facilitators with High-Profit Equity Sharing & End-to-End Operational Excellence.
+      </p>
+      <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+        <a href="#partnership-form" class="btn btn-primary">
+          <i class="fa-solid fa-paper-plane"></i> Apply for Partnership
+        </a>
+        <a href="sudama_medical_facilitator_proposal_v3.pdf" download class="btn btn-outline" style="background: rgba(255,255,255,0.15); color: #FFFFFF; border-color: rgba(255,255,255,0.4);">
+          <i class="fa-solid fa-file-pdf"></i> Download Proposal
+        </a>
+      </div>
+
+      <!-- Proper Hero Stats Grid -->
+      <div class="hero-stats-row">
+        <div class="hero-stat-card">
+          <div class="hero-stat-number">Up to 50%</div>
+          <div class="hero-stat-label">Net Profit Share</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-number">100+</div>
+          <div class="hero-stat-label">JCI/NABH Hospitals</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-number">100%</div>
+          <div class="hero-stat-label">Ground Logistics</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="hero-stat-number">7-14 Days</div>
+          <div class="hero-stat-label">Fast Payouts</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXECUTIVE SUMMARY -->
+  <section class="summary-section">
+    <div class="container">
+      <div class="summary-card">
+        <div class="section-subtitle">Executive Summary & Vision</div>
+        <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Bridging Global Patients with India's Premier Medical Network</h2>
+        <p class="summary-text">
+          <strong>Sudama Global Health</strong> is India’s premier medical tourism facilitation platform, bridging the gap between international patients and India's top JCI and NABH accredited hospitals.
+        </p>
+
+        <!-- Vision Badges Grid -->
+        <div class="vision-badges-grid">
+          <div class="vision-badge-card">
+            <div class="vision-badge-icon"><i class="fa-solid fa-hospital"></i></div>
+            <div class="vision-badge-title">100+ Hospital Chains</div>
+          </div>
+          <div class="vision-badge-card">
+            <div class="vision-badge-icon"><i class="fa-solid fa-user-doctor"></i></div>
+            <div class="vision-badge-title">World Specialists</div>
+          </div>
+          <div class="vision-badge-card">
+            <div class="vision-badge-icon"><i class="fa-solid fa-file-contract"></i></div>
+            <div class="vision-badge-title">Transparent Equity</div>
+          </div>
+          <div class="vision-badge-card">
+            <div class="vision-badge-icon"><i class="fa-solid fa-headset"></i></div>
+            <div class="vision-badge-title">24/7 Concierge</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION -->
+  <section class="benefits-section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Value Proposition</div>
+        <h2 class="section-title">Why Partner With Us?</h2>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper"><i class="fa-solid fa-hospital-user"></i></div>
+          <h3 class="benefit-title">Direct Hospital & Specialist Access</h3>
+          <p class="benefit-desc">Priority access to leading hospital chains in Oncology, Cardiology, Orthopedics, Transplants, and Neurology.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper"><i class="fa-solid fa-notes-medical"></i></div>
+          <h3 class="benefit-title">Complete Patient Lifecycle Support</h3>
+          <p class="benefit-desc">Tele-consultations, customized treatment plans, M-Visa assistance, airport transfers, and local coordinators.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          <h3 class="benefit-title">Transparent Accounting & Fast Settlements</h3>
+          <p class="benefit-desc">Clear profit calculations per case with direct disbursements handled within 7 to 14 days.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon-wrapper"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3 class="benefit-title">Co-Branded Marketing Support</h3>
+          <p class="benefit-desc">Grow your brand using our collateral, clinical case studies, digital portals, and health camp tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PURE NET PROFIT TIERS -->
+  <section class="profit-section">
+    <div class="container">
+      <div class="section-title-wrapper">
+        <div class="section-subtitle">Lucrative Payout Architecture</div>
+        <h2 class="section-title">Pure Net Profit Sharing Tiers</h2>
+      </div>
+
+      <div class="profit-intro-box">
+        <p class="profit-intro-text"><i class="fa-solid fa-chart-line" style="color:var(--secondary-yellow);"></i> Earn a direct percentage share of total net profits generated per patient case.</p>
+      </div>
+
+      <!-- Tiers Grid -->
+      <div class="tiers-grid">
+        <div class="tier-card">
+          <div class="tier-name">Associate</div>
+          <div class="tier-volume">1 – 2 Patients / Mo</div>
+          <div class="tier-payout">30% Share</div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-circle-check"></i> Standard Ground Support</li>
+            <li><i class="fa-solid fa-circle-check"></i> Direct Doctor Access</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="tier-name">Silver</div>
+          <div class="tier-volume">3 – 9 Patients / Mo</div>
+          <div class="tier-payout">35% - 40% Share</div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-circle-check"></i> Priority Concierge</li>
+            <li><i class="fa-solid fa-circle-check"></i> Express Opinions</li>
+          </ul>
+        </div>
+        <div class="tier-card featured">
+          <div class="tier-badge">Popular</div>
+          <div class="tier-name">Gold</div>
+          <div class="tier-volume">10 – 15 Patients / Mo</div>
+          <div class="tier-payout">45% Share</div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-circle-check"></i> VIP Airport Transfers</li>
+            <li><i class="fa-solid fa-circle-check"></i> Co-Branded Marketing</li>
+          </ul>
+        </div>
+        <div class="tier-card">
+          <div class="tier-name">Platinum</div>
+          <div class="tier-volume">16+ Patients / Mo</div>
+          <div class="tier-payout">50% Share</div>
+          <ul class="tier-features">
+            <li><i class="fa-solid fa-circle-check"></i> 50/50 Joint Venture</li>
+            <li><i class="fa-solid fa-circle-check"></i> VIP Hospital Lounges</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Ancillary Grid -->
+      <div class="ancillary-grid">
+        <div class="ancillary-card">
+          <div class="ancillary-icon"><i class="fa-solid fa-spa"></i></div>
+          <div>
+            <strong style="color:var(--primary-blue);">Wellness & Recovery Packages</strong>
+            <p style="font-size:0.85rem; color:var(--text-muted);">Up to 45% profit share on post-op Ayurveda and resort recovery.</p>
+          </div>
+        </div>
+        <div class="ancillary-card">
+          <div class="ancillary-icon"><i class="fa-solid fa-hotel"></i></div>
+          <div>
+            <strong style="color:var(--primary-blue);">Logistics & Stay</strong>
+            <p style="font-size:0.85rem; color:var(--text-muted);">Share in net profits from hotel stays, transits, and family arrangements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REGISTRATION FORM & CONTACT -->
+  <section class="registration-section" id="partnership-form">
+    <div class="container">
+      <div class="registration-grid">
+        <!-- Contact Panel -->
+        <div class="contact-info-panel">
+          <div style="color:var(--secondary-yellow); font-size:0.75rem; font-weight:800;">SUDAMA GLOBAL TRADE</div>
+          <h3 style="font-size:1.5rem; font-weight:900; margin-bottom:20px;">Health & Wellness Division</h3>
+
+          <div class="contact-person-card">
+            <div style="color:var(--secondary-yellow); font-size:0.72rem; font-weight:800;">FOUNDER & CEO</div>
+            <div style="font-weight:800;">Abhijeet Borade</div>
+            <a href="tel:+917020753181" style="color:#FFF; text-decoration:none; font-size:0.85rem;"><i class="fa-solid fa-phone"></i> +91 70207 53181</a>
+          </div>
+
+          <div class="contact-person-card">
+            <div style="color:var(--secondary-yellow); font-size:0.72rem; font-weight:800;">CO-FOUNDER</div>
+            <div style="font-weight:800;">Amol Badad</div>
+            <a href="tel:+917030643132" style="color:#FFF; text-decoration:none; font-size:0.85rem;"><i class="fa-solid fa-phone"></i> +91 70306 43132</a>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="form-card">
+          <h3 style="font-size:1.5rem; font-weight:800; color:var(--primary-blue);">Apply for Partnership</h3>
+          <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:20px;">Fill out the form below to connect with our team.</p>
+
+          <form id="facilitatorForm" onsubmit="handleFacilitatorSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="facName">Full Name *</label>
+              <input type="text" id="facName" class="form-control" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="facCategory">Category / Role *</label>
+              <select id="facCategory" class="form-control" required>
+                <option value="" disabled selected>Select role...</option>
+                <option value="Individual Facilitator">Individual Facilitator</option>
+                <option value="Facilitator Team">Facilitator Agency</option>
+                <option value="Diagnostic Clinic">Diagnostic Clinic</option>
+                <option value="Hospital">Hospital</option>
+                <option value="Doctor">Doctor / Consultant</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="facPhone">Mobile Number (WhatsApp) *</label>
+              <div class="phone-input-group">
+                <input type="text" id="facPhoneCode" class="form-control" placeholder="+91" value="+91" required>
+                <input type="tel" id="facPhone" class="form-control" placeholder="Mobile number" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="facEmail">Email Address (Optional)</label>
+              <input type="email" id="facEmail" class="form-control" placeholder="name@domain.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="facCountry">Country *</label>
+              <input type="text" id="facCountry" class="form-control" placeholder="e.g. Kenya, UAE, Oman" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="facDescription">Description *</label>
+              <textarea id="facDescription" class="form-control" placeholder="Tell us about your experience..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Application
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html#home">
+            <img src="https://vikashsaran04.github.io/sudamaglobalhealth.com/logo.jpg" alt="Sudama Global Health Logo" class="footer-logo" onerror="this.onerror=null; this.src='logo.jpg';">
+          </a>
+          <p class="footer-desc">
+            Sudama Global Health connects international patients with India's top accredited hospitals and doctors.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html#home"><i class="fa-solid fa-chevron-right"></i> Home</a></li>
+            <li><a href="index.html#treatments"><i class="fa-solid fa-chevron-right"></i> Treatments</a></li>
+            <li><a href="index.html#process"><i class="fa-solid fa-chevron-right"></i> Process</a></li>
+            <li><a href="index.html#hospitals"><i class="fa-solid fa-chevron-right"></i> Hospitals</a></li>
+            <li><a href="blog.html"><i class="fa-solid fa-chevron-right"></i> Medical Blog</a></li>
+            <li><a href="facilitator-partnership-progra.html"><i class="fa-solid fa-chevron-right"></i> Partnership Program</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+          <h4 class="footer-title">Contact & Social</h4>
+          
+          <div class="footer-contact-item">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase;">WhatsApp Support</div>
+              <a href="https://wa.me/917020753181" target="_blank" style="color: #FFFFFF; font-weight: 700;">+91 70207 53181</a>
+            </div>
+          </div>
+
+          <div class="footer-contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <div style="font-size: 0.75rem; text-transform: uppercase;">Email Us</div>
+              <a href="mailto:contact@sudamaglobalhealth.com" style="color: #FFFFFF; font-weight: 700;">contact@sudamaglobalhealth.com</a>
+            </div>
+          </div>
+
+          <div class="footer-social-group">
+            <div class="footer-social-title">Follow Us</div>
+            <div class="social-icons-list">
+              <a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" target="_blank" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://wa.me/917020753181" target="_blank" class="social-icon-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Sudama Global Health. All rights reserved.</div>
+        <div>Building Smoother, Safer, and Affordable Medical Journeys.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Drawer Navigation Toggle
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const drawerToggleBtn = document.getElementById('drawerToggleBtn');
+    const drawerClose = document.getElementById('drawerClose');
+
+    if (drawerToggleBtn) {
+      drawerToggleBtn.addEventListener('click', () => {
+        drawerOverlay.classList.add('active');
+      });
+    }
+
+    if (drawerClose) {
+      drawerClose.addEventListener('click', () => {
+        drawerOverlay.classList.remove('active');
+      });
+    }
+
+    if (drawerOverlay) {
+      drawerOverlay.addEventListener('click', (e) => {
+        if (e.target === drawerOverlay) {
+          drawerOverlay.classList.remove('active');
+        }
+      });
+    }
+
+    // Form Submission
+    function handleFacilitatorSubmit(e) {
+      e.preventDefault();
+
+      const name = document.getElementById('facName').value.trim();
+      const category = document.getElementById('facCategory').value;
+      const phoneCode = document.getElementById('facPhoneCode').value.trim();
+      const phoneNum = document.getElementById('facPhone').value.trim();
+      const email = document.getElementById('facEmail').value.trim();
+      const country = document.getElementById('facCountry').value.trim();
+      const desc = document.getElementById('facDescription').value.trim();
+
+      const message = `*New Partnership Application*%0A` +
+        `*Name:* ${encodeURIComponent(name)}%0A` +
+        `*Role:* ${encodeURIComponent(category)}%0A` +
+        `*Country:* ${encodeURIComponent(country)}%0A` +
+        `*Phone:* ${encodeURIComponent(phoneCode + ' ' + phoneNum)}%0A` +
+        `*Email:* ${encodeURIComponent(email || 'N/A')}%0A` +
+        `*Description:* ${encodeURIComponent(desc)}`;
+
+      window.open(`https://wa.me/917020753181?text=${message}`, '_blank');
+    }
+  </script>
+</body>
+</html>
