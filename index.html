@@ -1459,6 +1459,47 @@
       font-weight: 600;
     }
 
+        .footer-social-group {
+      margin-top: 20px;
+    }
+
+    .footer-social-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons-list {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .social-icon-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      color: #FFFFFF;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.15rem;
+      transition: var(--transition);
+      border: 1px solid rgba(255, 195, 90, 0.35);
+      text-decoration: none;
+    }
+
+    .social-icon-btn:hover {
+      background: var(--secondary-yellow);
+      color: var(--primary-blue);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(255, 195, 90, 0.35);
+    }
+
     /* ==========================================================================
        12. MOBILE OPTIMIZATIONS & MEDIA QUERIES
        ========================================================================== */
@@ -2364,6 +2405,24 @@
           </div>
         </div>
       </div>
+          <!-- Social Media Links -->
+          <div class="footer-social-group">
+            <div class="footer-social-title">Follow Us</div>
+            <div class="social-icons-list">
+              <a href="https://www.instagram.com/sudamaglobal.health?igsh=MXM1dzh2anU0MG55Mw%3D%3D&utm_source=qr" target="_blank" class="social-icon-btn" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.facebook.com/share/1JP7JDQgjq/?mibextid=wwXIfr" target="_blank" class="social-icon-btn" aria-label="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/sudamaglobaltrade/" target="_blank" class="social-icon-btn" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://wa.me/917020753181" target="_blank" class="social-icon-btn" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
 
       <div class="footer-bottom">
         <div>© 2026 Sudama Global Health. All Rights Reserved.</div>
